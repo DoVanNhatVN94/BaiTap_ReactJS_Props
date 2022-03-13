@@ -8,6 +8,9 @@ export default class ProductItem extends Component {
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         className="card"
+        onClick={() => {
+          setStateModal(item);
+        }}
         style={{ width: "19rem" }}
       >
         <img src={item.image} className="img-fluid" alt="..." />
